@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice-Roller🎲</title>
+    <style>
+        body{
+            background-color:rgb(44, 43, 43);
+        }
+        .roller-game{
+            margin: 10px auto;
+            width: 1000px; 
+            text-align: center;
+            font-size: 20px;
+            background-color: aliceblue;
+            border-radius: 15px;
+            border: 5px double white;
+        }
+        .dice-roller-container{
+            background-color:rgb(240, 103, 103);
+            width: 220px;
+            display: block;
+            margin: 15px auto;
+            margin-top: 30px;
+            border: 7px double white;
+            padding: 10px;
+            border-radius: 15px;
+            box-shadow: 1px 1px 2px 1px gray;
+        }
+        .dice{
+            height: 100px;
+            margin: 10px auto;
+            display: block;
+        }
+        .dice-text{
+            text-align: center;
+            font-size: 40px;
+            color: white;
+        }
+        .btn-roll{
+            width: 150px;
+            background-color: red;
+            color: white;
+            border-radius: 15px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 25px;
+            padding: 7px;
+            margin-left: 35px;
+        }
+    </style>
+</head>
+<body>
+    <div class="roller-game">
+        <h2>Dice Roller Game🎲</h2>
+    </div>
+    <div class="dice-roller-container">
+       <img src="./dice1.png" class="dice" id="dice" />
+       <h1 class="dice-text">0</h1>
+       <button class="btn-roll" onclick="roll()">Roll Dice🎲</button>
+    </div>
+    <script>
+
+    </script>
+</body>
+</html>
