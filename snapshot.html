@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>snapshot</title>
+</head>
+
+<body>
+    <ol id="veglist">
+
+        <li>potato</li>
+        <li>tomato</li>
+       
+
+    </ol>
+    <input type="text" placeholder="Enter vegtable name" id="veginput" />
+    <button type="button" onclick="addToList()">Add to List</button>
+
+    <script>
+        const vegs = [];
+
+        function addToList(){
+            const vegname = document.getElementById("veginput").value;
+            vegs.push(vegname);
+
+            document.getElementById("veginput").value = " " ;
+
+            loadlist();
+        }
+        function loadlist(){
+            const veglist = document.getElementById("veglist");
+            for (let i = 0; i < vegs.length; i++) {
+
+                veglist.innerHTML = veglist.innerHTML + `<li>${vegs[i]}</li>`
+            }
+        }
+    </script>
+</body>
+
+</html>
