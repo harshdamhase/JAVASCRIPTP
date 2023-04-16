@@ -25,11 +25,15 @@
     <button onclick="fun2()">two</button>
     <!--passing parameeter-->
     <h4>onclick event passing parameter to function</h4>
+    
     <button onclick="shownum(2)">num</button>
 
     <button onclick="shownum(1)">num1</button>
 
+    <button onclick="shownum(3)">num3</button>
+
     <script type="text/javascript">
+
         function sendmsg() {
             alert("got it")
         }
@@ -37,12 +41,13 @@
         function fun1() {
             console.log(1);
         }
-
+       
         function fun2() {
             console.log(2);
         }
 
-        //passing paameter to function
+        //passing parameter to function
+        //ekch function use kryche fkt call krte time parameter diff use krne
         function shownum(num) {
             console.log(num);
         }
