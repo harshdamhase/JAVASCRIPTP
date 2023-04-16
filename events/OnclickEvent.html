@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event1</title>
+</head>
+
+<body>
+    <h4>onclick event</h4>
+    <button onclick="alert('button is click')">ok</button>
+    <!--event = action -->
+    <h4>onmouse over event</h4>
+    <button onmouseover="alert('ok')">login</button>
+    <!--call function-->
+    <h4>onclick event with function</h4>
+
+    <button onclick="sendmsg()">fun1</button>
+    <h4>onclick event with function</h4>
+
+    <button onclick="fun1()">one</button>
+
+    <button onclick="fun2()">two</button>
+    <!--passing parameeter-->
+    <h4>onclick event passing parameter to function</h4>
+    <button onclick="shownum(2)">num</button>
+
+    <button onclick="shownum(1)">num1</button>
+
+    <script type="text/javascript">
+        function sendmsg() {
+            alert("got it")
+        }
+
+        function fun1() {
+            console.log(1);
+        }
+
+        function fun2() {
+            console.log(2);
+        }
+
+        //passing paameter to function
+        function shownum(num) {
+            console.log(num);
+        }
+    </script>
+</body>
+
+</html>
