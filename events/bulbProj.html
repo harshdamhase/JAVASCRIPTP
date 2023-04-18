@@ -1,28 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bulb project</title>
 </head>
+<style>
+    #container {
+        height: 300px;
+        width: 300px;
+        border-radius: solid;
+        border-radius: 30px;
+
+        display: block;
+        background-color: rgb(10, 200, 200);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .img {
+        height: 100px;
+        width: 200px;
+    }
+
+    #btn1 {
+        background-color: crimson;
+        height: 20px;
+        width: 80px;
+    }
+
+    #btn2 {
+        background-color: crimson;
+        height: 20px;
+        width: 80px;
+    }
+</style>
+
 <body>
-    <img src="idea.png" id="Bulb" style="height: 100px;"/>
-    <button onclick="bulbOn()">On</button>
+    <div id="container">
+        <img src="./bulbon.png" id="bulb" class="img" alt="image" />
+        <button id="btn1" onclick="changebulb(1)">On</button>
 
-    <button onclick="bulbOff()">off</button>
-
+        <button id="btn2" onclick="changebulb(0)">off</button>
+    </div>
     <script>
-        function bulbOn()
-        {
-    const imgElement = document.getElementById("idea");
-    imgElement.src = "Bulb.on.png"
-        }
-        function bulbOff()
-        {
-            const imgElement = document.getElementById("idea");
-            img.src = "Bulb.on.png"
+        function changebulb(num) {
+            const imgElement = document.getElementById("bulb");
+            if (num == 1) {
+                imgElement.src = "./bulbon.png";
+            }
+            else {
+                imgElement.src = "./bulbOf.png";
+            }
         }
     </script>
 </body>
+
 </html>
